@@ -20,7 +20,7 @@ fun main() {
       if (s[i][j] == 'S' || s[i][j] == 'a') {
         s[i][j] = 'a'
         d[i][j] = 0
-        q.add(Pair(i, j))				
+        q.add(Pair(i, j))
       }
     }
   }

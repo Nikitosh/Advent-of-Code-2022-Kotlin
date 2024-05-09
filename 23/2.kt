@@ -33,7 +33,7 @@ fun main() {
           val neighbours = (-1..1).map { x -> 
             val nx = i + (if (TURN[dir][0] == 0) x else TURN[dir][0])
             val ny = j + (if (TURN[dir][1] == 0) x else TURN[dir][1])
-            if (good(nx, ny, n, m) && a[nx][ny] == '#') 1 else 0						
+            if (good(nx, ny, n, m) && a[nx][ny] == '#') 1 else 0
           }.sum()
           val nx = i + TURN[dir][0]
           val ny = j + TURN[dir][1]
@@ -44,7 +44,7 @@ fun main() {
           }
         }
         if (!was) {
-          next.getOrPut(Pair(i, j)) { mutableListOf() }.add(Pair(i, j))	
+          next.getOrPut(Pair(i, j)) { mutableListOf() }.add(Pair(i, j))
         }
       }
     }

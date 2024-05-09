@@ -20,7 +20,7 @@ fun main() {
     for (pos in poss) {
       val nx = (pos.first + TURN[pos.third][0] - 1).norm(n - 2) + 1
       val ny = (pos.second + TURN[pos.third][1] - 1).norm(m - 2) + 1
-      nextPoss.add(Triple(nx, ny, pos.third))		
+      nextPoss.add(Triple(nx, ny, pos.third))
     }
     for (pos in ts) {
       for (g in 0..4) {
